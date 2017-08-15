@@ -28,7 +28,7 @@ def databaseDo(query):
 	a.execute(sql)
 	a.close()
 
-def find_shit(link):
+def find_news(link):
 
 	page = urlopen(link)
 	soep = BeautifulSoup(page.read(), "html.parser")
@@ -61,7 +61,7 @@ if __name__ == "__main__":
 		iteration+=1
 		print("Iteration: "+str(iteration))
 		try:
-			find_shit("http://nos.nl/nieuws/buitenland/")
+			find_news("http://nos.nl/nieuws/buitenland/")
 		except:
 			print("There was an error!")
 		time.sleep(60)
