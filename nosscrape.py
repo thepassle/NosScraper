@@ -4,7 +4,7 @@ from urllib.request import urlopen
 from bs4 import BeautifulSoup
 
 def databaseGetOne(query):
-	conn= pymysql.connect(host='www52.totaalholding.nl',user='thepas1q_pascal',password='karel',db='thepas1q_test_base',charset='utf8mb4')
+	conn= pymysql.connect(host='www52.totaalholding.nl',user='thepas1q_pascal',password='#####',db='thepas1q_test_base',charset='utf8mb4')
 	sql=str(query)
 	a=conn.cursor()
 	a.execute(sql)
@@ -13,7 +13,7 @@ def databaseGetOne(query):
 	return data
 
 def databaseGetAll(query):
-	conn= pymysql.connect(host='www52.totaalholding.nl',user='thepas1q_pascal',password='karel',db='thepas1q_test_base',charset='utf8mb4')
+	conn= pymysql.connect(host='www52.totaalholding.nl',user='thepas1q_pascal',password='#####',db='thepas1q_test_base',charset='utf8mb4')
 	sql=str(query)
 	a=conn.cursor()
 	a.execute(sql)
@@ -22,7 +22,7 @@ def databaseGetAll(query):
 	return data
 
 def databaseDo(query):
-	conn= pymysql.connect(host='www52.totaalholding.nl',user='thepas1q_pascal',password='karel',db='thepas1q_test_base',charset='utf8mb4')
+	conn= pymysql.connect(host='www52.totaalholding.nl',user='thepas1q_pascal',password='#####',db='thepas1q_test_base',charset='utf8mb4')
 	sql=str(query)
 	a=conn.cursor()
 	a.execute(sql)
